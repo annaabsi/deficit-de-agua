@@ -1,0 +1,217 @@
+
+.oculto-sm{display: none;}
+body{margin: 0;padding: 0;font-family: 'Open Sans', sans-serif;font-weight: 400;font-size: 20px;line-height: 30px;color: #333;background: #fff;transition: background-color 1s ease-out;}
+::selection{background: #2b2b2b;color: #fff;}
+.clear{clear: both;}
+.noMargin{margin-top: 0;}
+ul{margin: 0; padding: 0; list-style-type: none;}
+ul li{margin: 0; padding: 0; list-style-type: none;}
+.darks{background: #2b2b2b;color: #fff;}
+.cover{height: 100vh;text-align: center;position: relative;background: #f3f2e8;margin: 0;padding: 0;width: 100%;}
+.cover .wrapper{display: flex;align-items: center;height: 80vh;}
+.cover .logos{padding: 30px 0 20px;}
+.cover .logos a{padding: 0 10px;}
+.cover .logos a img{max-width: 180px;}
+.cover .logos a img.CONNECTAS{max-width: 160px;position: relative;top: -5px;}
+.cover .title h1{margin: 0;}
+.cover .title{width: 50%;margin: 0 auto;max-width: 1000px;}
+.cover .title img{display: block;width: 100%;}
+
+
+.content{padding: 60px 0;}
+.content p{margin-bottom: 25px;}
+
+p .capitalLetter{display: block;float: left;height: 75px;margin: 8px 12px 0 2px;}
+p .capitalLetter.bigger{height: 80px;margin: -2px 12px 0 -21px;}
+
+
+/* Scrollytelling */
+
+.scrollytelling {
+  width: 100%;
+  position: relative;
+}
+.scrollytelling .stage {
+  position: sticky;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+.scrollytelling .stage .scene {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+.scrollytelling .stage .scene:not(:first-child) {
+  opacity: 0;
+}
+.scrollytelling .stage .scene img {
+  position: absolute;
+  width: 100% !important;
+  height: 100vh !important;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.scrollytelling .stage .scene .fs-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  object-fit: cover;
+}
+.scrollytelling.for-intro .stage .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,.65) 100%);
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,.65) 100%);
+  background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,.65) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
+}
+
+.scrollytelling.infografia .stage .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.scrollytelling.infografia .stage .credit {
+  position: absolute;
+  background: #000;
+  min-width: 250px;
+  width: 20%;
+  padding: 10px;
+}
+
+.scrollytelling.infografia .stage .credit strong {
+  color: #fff;
+}
+
+.scrollytelling .content:not(.container) {
+  margin-top: -100vh;
+  padding: 0;
+}
+.scrollytelling .content .s-slide {
+  min-height: 100vh;
+  padding: 1rem;
+  position: relative;
+}
+.scrollytelling .scene .credit {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1em;
+  color: #FFF;
+}
+.scrollytelling .content .s-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+.scrollytelling .content .s-slide.dark {
+  background-color: #161B21;
+}
+.scrollytelling.for-intro .content .s-slide .readable {
+
+}
+.scrollytelling .content .s-slide .readable .p-intro {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.3em;
+  color: #FFF;
+  text-align: center;
+  padding: 0 6rem;
+  text-shadow: 0 0 8px rgb(0 0 0 / 50%);
+  max-width: 700px;
+}
+.scrollytelling.for-intro .content .s-slide .transition {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(243,242,232,1) 0%, rgba(243,242,232,0) 100%);
+}
+
+.mobile-only {
+  display: none;
+}
+
+
+@media screen and (min-width:768px) and (max-width:1007px){
+  .scrollytelling.for-intro .content .s-slide .readable .p-intro {
+    padding: 0 4rem;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .oculto-xs{display: none;}
+  .oculto-sm{display: block;}
+	body{font-size: 19px;line-height: 28px;color: #444;font-weight: 400;}
+	p .capitalLetter{height: 68px;margin: 9px 11px 0 2px;}
+  p .capitalLetter.bigger {margin: -2px 12px 0 0px;}
+
+  .cover {
+    display: flex;
+    flex-direction: column;
+  }
+  .cover .logos{padding: 30px 0 40px;  position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;}
+	.cover .logos a img {max-width: 145px;}
+	.cover .logos a img.CONNECTAS {max-width: 130px;}
+
+  .cover .wrapper{display: flex;flex-direction: column;justify-content: center;flex-grow: 1;}
+  .cover .title, .cover .illustration{width: 100%;}
+  .cover .title img, .cover .illustration img{width: 90%;margin: 0 auto;}
+
+  .scrollytelling.for-intro .content .s-slide .readable .p-intro {
+    font-size: 26px;
+    padding: 0;
+  }
+  .scrollytelling .content .s-slide {
+    padding: 1.5rem 1rem;
+    align-items: flex-start;
+  }
+  .scrollytelling .content .s-slide .s-card {
+    width: 91.6666%;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+}
+
+
