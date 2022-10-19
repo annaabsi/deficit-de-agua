@@ -17,7 +17,7 @@
   <meta property="og:url"
     content="https://data.larepublica.pe/pasivos-ambientales-los-residuos-de-la-mineria-que-nadie-quiere-asumir">
   <meta property="og:title"
-    content="Burocracia y dejadez política paralizan inversiones de infraestructura natural en comunidades con déficit de agua">
+    content="Inversiones de infraestructura natural paralizadas en comunidades con déficit del agua">
   <meta property="og:image"
     content="https://origin.cronosmedia.glr.pe/large/2022/08/20/lg_63019642404dee685359a31c.jpg">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -26,7 +26,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@LRData">
   <meta name="twitter:title"
-    content="Burocracia y dejadez política paralizan inversiones de infraestructura natural en comunidades con déficit de agua">
+    content="Inversiones de infraestructura natural paralizadas en comunidades con déficit del agua">
   <meta name="twitter:description"
     content="Miles de desechos contaminantes son el resultado de la explotación minera en Perú. En casi todos ellos, las mineras que los provocaron y abandonaron no han sido identificadas por las autoridades. Esto porque aprovecharon vacíos en las leyes para seguir operando sin mayores sanciones.">
   <meta name="twitter:image"
@@ -36,8 +36,7 @@
   <meta name="lang" content="es_PE">
   <meta name="author" content="Redacción LR">
   <meta name="keywords" content="Perú">
-  <title>Burocracia y dejadez política paralizan inversiones de infraestructura natural en comunidades con déficit de
-    agua</title>
+  <title>Inversiones de infraestructura natural paralizadas en comunidades con déficit del agua</title>
   <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.larepublica.pe/favicon-32x32.png">
 
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -411,7 +410,7 @@
     }
 
     .item-1 {
-      background-image: url('01.jpg');
+      background-image: url('foto tomasa.png');
     }
 
     .item-2 {
@@ -525,6 +524,56 @@
     .item-29 {
       background-image: url('29.jpg');
     }
+
+    .background {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center top;
+    }
+
+    .background-1 {
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)30%), url('parte 1.png');
+    }
+
+    span [class*="btn-"] {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin-left: 10px;
+    }
+
+    span a.btn-fb {
+      margin-left: 0;
+    }
+
+    span a.btn-fb,
+    span a.btn-twt,
+    span a.btn-wsp {
+      background-image: url(https://files.larepublica.pe/Larepublica/2020/11/09/iconos-redes-sociales-blanco-1604962294.svg);
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-size: 30px;
+      filter: brightness(100);
+    }
+
+    span a.btn-twt {
+      background-position: 0 -30px;
+      background-repeat: no-repeat;
+    }
+
+    span a.btn-wsp {
+      background-position: 0 -60px;
+      background-repeat: no-repeat;
+    }
+
+    .menu__rigth {
+      display: inline-block;
+      text-align: right;
+      vertical-align: middle;
+      width: calc(100% - 198px);
+      min-width: 140px;
+      margin-top: 10px;
+    }
   </style>
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -533,9 +582,6 @@
 
 <body cz-shortcut-listen="true">
   <header id="w-header" class="">
-    <iframe width="100%" height="1" src="https://www.connectas.org/RECURSOS/pasivos-ambientales.html" frameborder="0"
-      scrolling="0"
-      style="width:100%;padding: 0;margin: 0;height: 1px;min-height: 1px;display: block; background-color: #fff; opacity: 0;"></iframe>
     <div class="d-flex space-between">
       <a href="https://data.larepublica.pe/" rel="noopener" style="display:inline-block;" target="_blank"
         class="a-header">
@@ -546,7 +592,7 @@
           <img src="logo.png" style="width: 120px; margin-top: 5px;">
         </div>
       </a>
-      <a href="https://www.connectas.org/" rel="noopener" style="display:inline-block;" target="_blank"
+      <!-- <a href="https://www.connectas.org/" rel="noopener" style="display:inline-block;" target="_blank"
         class="a-header">
         <div id="w-sourceLogoDesktop" class="logo-desktop" style="display:block">
           <img src="connectas-logo-white-300x117.png" style="width: 140px">
@@ -554,7 +600,7 @@
         <div id="w-sourceLogoMobile" class="logo-mobile" style="display:none">
           <img src="connectas-logo-white-300x117.png" style="width: 140px">
         </div>
-      </a>
+      </a> -->
       <!-- <span>
         <a class="btn-fb btn-Social" data-social="facebook" href="javascript:void(0)" id="id-btn-fb" rel="noopener">
         </a>
@@ -565,11 +611,17 @@
           id="id-btn-wsp" rel="noopener" target="_blank">
         </a>
       </span> -->
+      <div class="menu__rigth"><span class="items_shared"> <a class="btn-fb btn-Social" data-social="facebook"
+            href="https://www.facebook.com/sharer/sharer.php?u=[seo_url]" id="id-btn-fb" rel="noopener"> </a> <a
+            class="btn-twt btn-Social" data-social="twitter" href="https://twitter.com/share?url=[seo_url]&via=LRData"
+            id="id-btn-twt" rel="noopener"> </a> <a class="btn-wsp" href="https://api.whatsapp.com/send?text=[seo_url]"
+            id="id-btn-wsp" rel="noopener" target="_blank"> </a> </span></div>
+    </div>
     </div>
   </header>
 
   <!-- Scrollytelling -->
-  <div class="scrollytelling for-intro">
+  <!-- <div class="scrollytelling for-intro">
     <div class="stage">
       <div class="scene" data-offset="0">
         <img src="media/images/slide-1.jpg" class="fs-image">
@@ -631,47 +683,43 @@
         <div class="transition"></div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- Ends Scrollytelling -->
 
-  <section class="cover" id="portada-cover">
-
-    <div class="logos">
-      <a href="https://larepublica.pe/" target="_blank"><img class="LaRepublica" src="media/images/la-republica.svg"
-          alt="La República"></a>
-      <a href="https://www.connectas.org/" target="_blank"><img class="CONNECTAS" src="media/images/connectas.svg"
-          alt="CONNECTAS"></a>
-    </div>
+  <!-- <section class="cover" id="portada-cover">
 
     <div class="wrapper">
-      <!--  <div class="title oculto-xs"><h1><img src="media/images/title.png" alt="" /></h1></div>
-      <div class="title oculto-sm"><h1><img src="media/images/title_m.png" alt="" /></h1></div> -->
+      <div class="title oculto-xs"><h1><img src="media/images/title.png" alt="" /></h1></div>
+      <div class="title oculto-sm"><h1><img src="media/images/title_m.png" alt="" /></h1></div>
       <div class="title" id="titulooo">
-        <h1><img src="media/images/title.png" alt="" /></h1>
       </div>
     </div>
 
     <div class="clear"></div>
 
-  </section>
+  </section> -->
 
   <section id="w-section">
     <div>
-      <div>
-        <h2 class="texto-lr"
-          style="padding-top: 40px; padding-bottom: 20px; font-style: italic; text-align:center; color: #000;">
-          Un seguimiento al financiamiento público de los proyectos de infraestructura natural para la seguridad hídrica
-          evidencia que aún hay grandes obras que no avanzan y otras que concluyeron sin ejecutar su presupuesto total.
-          En Huancavelica, 4 millones de personas están a la espera de proyectos de siembra y cosecha de agua.
-        </h2>
-        <div class="texto-lr">
-          <h5>Por: .</h5>
-          <h5>Fotografía: .</h5>
-          <h6>Publicado el 16 de octubre de 2022</h6>
+      <div class="hero-image">
+        <div class="w-img">
+          <img src="portada.png" alt="">
+        </div>
+
+        <div class="opacity">&nbsp;</div>
+
+        <div class="w-text">
+          <h1 id="titular">Inversiones de infraestructura natural paralizadas en comunidades con déficit del agua</h1>
+          <h2 class="texto-lr" style="padding-top: 40px; padding-bottom: 20px; font-style: italic; text-align:center;">
+            Un seguimiento al financiamiento público de los proyectos de infraestructura natural para la seguridad
+            hídrica
+            evidencia que aún hay grandes obras que no avanzan y otras que concluyeron sin ejecutar su presupuesto
+            total.
+            En Huancavelica, 4 millones de personas están a la espera de proyectos de siembra y cosecha de agua.
+          </h2>
         </div>
       </div>
-
-      <div class="">
+      <!-- <div class="">
         <div class="gallery-wrap video">
           <div class="item item-v-1"><video controls style='width: 100%; max-height: 50%;'>
               <source src="https://mdstrm.com/video/63014a99327d0a537f37b892.mp4#t=0.001" type="video/mp4">
@@ -692,11 +740,16 @@
               <source src="https://mdstrm.com/video/630150ad9a43ac5aa9ac1c01.mp4#t=0.001" type="video/mp4">
             </video></div>
         </div>
-      </div>
+      </div> -->
 
-      <div>
-        <div style="margin-top: 40px;">
-          <p class="texto-lr">
+      <div class="background background-1 text-white">
+        <div>
+          <div class="texto-lr" style="text-align: center;">
+            <h5 style="display: inline;">Por: Abel Cárdenas, Milagros Requena y Xenia Martínez.</h5>
+          </div>
+
+          <div class="texto-lr"><hr style="border-top:1px solid #fff; opacity: 1; margin: 30px 0 90px 0;"></div>
+          <!-- <p class="texto-lr">
             La población andina trata con cariño el agua, la cuidan como se protege al ser querido. Y cuando no está o
             no la tienen, sufren, les duele, se les hace difícil la vida.
           </p>
@@ -709,16 +762,16 @@
           <p class="texto-lr">
             Lamentablemente, el agua solo les llega por temporadas y el calvario se siente en el día a día. En la
             necesidad, todo se sufre el doble.
-          </p>
+          </p> -->
 
           <p class="texto-lr">
-            Tomasa Huarcaya lleva 84 años soñando con tener agua en su vida. Apoyada sobre un parante de madera que
-            rodea el canal por el cual discurre un poco de agua de la cima del cerro Carmen Alto, cuenta que esta solo
-            sirve para la subsistencia, pero que, a finales de julio, el conducto lucirá totalmente vacío.
+            Tomasa Huarcaya lleva 84 años soñando con tener agua saludable. Apoyada sobre un parante de madera que rodea
+            el canal por el cual discurre un poco de agua de la cima del cerro Carmen Alto, cuenta que esta solo sirve
+            para la subsistencia, pero que, a finales de julio, el conducto lucirá totalmente vacío.
           </p>
 
           <!-- Scrollytelling -->
-          <div class="scrollytelling infografia" style="margin-bottom: 40px;">
+          <!-- <div class="scrollytelling infografia" style="margin-bottom: 40px;">
 
             <div class="stage desktop-only">
               <div class="scene" data-offset="0">
@@ -911,11 +964,11 @@
                 <div class="transition"></div>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- Ends Scrollytelling -->
 
           <p class="texto-lr">
-            Ella vive a 6 horas de Huancavelica, en la provincia de Huaytará, distrito Huayacundo.
+            Ella vive a seis horas de Huancavelica, en la provincia de Huaytará, distrito Huayacundo.
           </p>
 
           <p class="texto-lr">
@@ -924,20 +977,19 @@
             no llueve, son malos meses.
           </p>
 
-          <div class="slider-container">
+          <!-- <div class="slider-container">
             <div class="gallery-wrap">
               <div class="item item-1"><span>Un pasivo minero es el residuo que deja una empresa luego de realizar
                   sus operaciones de extracción. Foto: José Sotomayor Jiménez</span></div>
-              <div class="item item-2"><span>Las instalaciones, depósitos químicos y de basura, movimientos de tierra y
-                  las
-                  pozas de relaves son pasivos de la minería. Foto José Sotomayor Jiménez</span></div>
             </div>
-          </div>
+          </div> -->
+
+          <img class="texto-lr" src="foto tomasa.png" alt="">
 
           <p class="texto-lr">
             En la comunidad de Carmen Alto, la agricultura y la ganadería son su principal fuente de abastecimiento.
             Pero, sin agua, están a la deriva: viven al borde del acantilado y del hambre. Sin agua, las tierras no dan
-            comida, los animales no crecen y la población se muere.
+            comida y los animales no crecen.
           </p>
 
           <p class="texto-lr">
@@ -949,37 +1001,49 @@
             Este proyecto de infraestructura natural le permitiría obtener agua filtrada de la lluvia, la cual podía ser
             utilizada para regar las tierras y también para el uso diario.
           </p>
+
+          <img class="texto-lr" src="foto olla con agua.png" alt="">
+
+          <p class="texto-lr">
+            <i>“Para siembra de agua, decían. Van a sembrar pinos o algo así. Ustedes iban a ganar su plata así, decían.
+              (¿En qué quedó?) En nada. Cada alcalde, cada autoridad… o sea, promesas no más eran”.</i>
+          </p>
+
+          <p class="texto-lr">
+            Lo mismo pensó Víctor, comunero de Carmen Alto. Al borde del camino nos cuenta que todo fue promesa, pues no
+            se ha visto ningún avance en su pueblo.
+          </p>
+
+          <img class="texto-lr" src="foto victor.png" alt="">
+
+          <p class="texto-lr">
+            “Hasta ahorita quedó en nada, lo que es nada. Solamente quedó en palabra, dijeron que se iba a hacer,
+            incluso fijaron una zona para la plantación de pino, dijeron que serían 30 mil pinos. En nuestra comunidad
+            iban a ser 12 cochas para almacenar agua”, declaró.
+          </p>
+
+          <p class="texto-lr">
+            La inversión que escucharon Tomasa y Víctor fue sobre uno de los proyectos de infraestructura natural para
+            la seguridad hídrica que promueven la conservación, restauración y recuperación de los ecosistemas con el
+            fin de contrarrestar problemas de acceso al agua tanto para las actividades económicas como para el consumo
+            diario de la población.
+          </p>
+          <br>
+
         </div>
       </div>
 
-      <div style="margin-top: 30px;">
-        <div class="texto-lr flourish-embed flourish-map" data-src="visualisation/10792316">
-          <script src="https://public.flourish.studio/resources/embed.js"></script>
-        </div>
+      <div class="background background-2 text-white">
+
       </div>
 
       <p class="texto-lr">
-        “Para siembra de agua, decían. Van a sembrar pinos o algo así. Ustedes iban a ganar su plata así, decían. (¿En
-        qué quedó?) En nada. Cada alcalde, cada autoridad… o sea, promesas no más eran”.
-      </p>
-
-      <p class="texto-lr">
-        Lo mismo pensó Víctor, comunero de Carmen Alto. Al borde del camino nos cuenta que todo fue promesa, pues no se
-        ha visto ningún avance en su pueblo.
-      </p>
-
-      <p class="texto-lr">
-        “Hasta ahorita quedó en nada, lo que es nada. Solamente quedó en palabra, dijeron que se iba a hacer, incluso
-        fijaron una zona para la plantación de pino, dijeron que serían 30 mil pinos. En nuestra comunidad iban a ser 12
-        cochas para almacenar agua”, declaró.
-      </p>
-
-      <p class="texto-lr">
-        La inversión que escucharon Tomasa y Víctor fue sobre uno de los proyectos de infraestructura natural para la
-        seguridad hídrica que promueven la conservación, restauración y recuperación de los ecosistemas con el fin de
-        contrarrestar problemas de acceso al agua tanto para las actividades económicas como para el consumo diario de
-        la población.
-      </p>
+        <h3>
+          <span>
+            Infraestructura natural
+          </span>
+        </h3>
+        </p>
 
       <p class="texto-lr">
         En muchas partes del país, las inundaciones, sequías, contaminación de los ríos u otro factor como lo que ocurre
@@ -987,15 +1051,6 @@
         quedan sin agua para su subsistencia, esto originó que las entidades públicas y privadas comiencen a invertir en
         proyectos de infraestructura natural.
       </p>
-
-      <div class="slider-container">
-        <div class="gallery-wrap">
-          <div class="item item-3"><span>Así se encontraba el proyecto minero Excélsior, en la región Pasco, que fue
-              intervenido por Activos Mineros SAC. Foto: AMSAC</span></div>
-          <div class="item item-4"><span>La operación minera La Pastora, en la región Cajamarca, es otra mina que
-              contenía graves pasivos que estaban contaminando los ríos. Foto: AMSAC</span></div>
-        </div>
-      </div>
 
       <p class="texto-lr">
         Gena Gammie, representante de Forest Trends, organización internacional encargada promover proyectos de
@@ -1040,16 +1095,6 @@
         altas, para luego filtrar equilibradamente el agua y mantener abastecida a las comunidades.
       </p>
 
-      <!-- <div style="margin: 40px 0;">
-        <iframe
-          src="https://uploads.knightlab.com/storymapjs/32e7fe0c3fbe3a2e0c8f5bfe6ae515f9/mina-san-rafael/index.html"
-          frameborder="0" width="100%" height="800"></iframe>
-      </div> -->
-
-      <div class="texto-lr flourish-embed flourish-map" data-src="visualisation/10960673">
-        <script src="https://public.flourish.studio/resources/embed.js"></script>
-      </div>
-
       <p class="texto-lr">
         También contempla la plantación de pinos en los alrededores de las cochas con el fin de reforestar los lugares
         devastados porque estas plantas servirían para absorber el agua y evitar erosiones de suelo.
@@ -1060,18 +1105,6 @@
         generaría ingresos para las familias.
       </p>
 
-      <div class="slider-container">
-        <div class="gallery-wrap">
-          <div class="item item-5"><span>Rolando Quispe, presidente de la comunidad campesina Túpac Amaru en San Antón,
-              muestra el barro verde que se asentó en el río Ramis. Foto: Juan Carlos Cisneros</span></div>
-          <div class="item item-6"><span>Los pobladores de la comunidad San Isidro denuncian que los niños que se bañan
-              en esta parte del río Ramis sufren de males en la piel. Foto: Juan Carlos Cisneros</span></div>
-          <div class="item item-7"><span>El río Ramis es la principal fuente de vida de la comunidad San Isidro. Lo usan
-              para ellos mismo, sus animales y la agricultura. Foto: Juan Carlos Cisneros</span></div>
-          <div class="item item-8"><span>Los comuneros de San Isidro cuentan que las aguas del río Ramis antes eran
-              cristalinas y permitían la crianza de truchas. Foto: Juan Carlos Cisneros</span></div>
-        </div>
-      </div>
 
       <p class="texto-lr">
         “(¿Les ofrecieron trabajo?) Sí, nos dijeron que nos iban a dar trabajo, qué íbamos a trabajar en la obra cuando
@@ -1093,17 +1126,6 @@
         con la voluntad de trabajar en equipo, pero tras el cambio de autoridades, los proyectos se estancaron por falta
         de acuerdos entre los actuales gobernadores regionales.
       </p>
-
-      <div class="slider-container">
-        <div class="gallery-wrap">
-          <div class="item item-9"><span>Estanislao Muña muestra el barro que se asienta en el río Ramis y que mató a
-              sus vacas luego de beberlas. Foto: Juan Carlos Cisneros</span></div>
-          <div class="item item-10"><span>Los animales de Flora Rivera que consumen las aguas del río Ramis enferman y
-              algunos mueren luego de un tiempo. Foto: Juan Carlos Cisneros</span></div>
-          <div class="item item-11"><span>En el centro poblado de Cangallo los comuneros denuncian que ya no pueden
-              regar ni dar de beber a su animales el agua del río Ramis. Foto: Juan Carlos Cisneros</span></div>
-        </div>
-      </div>
 
       <p class="texto-lr">
         Lamentablemente, las posturas políticas han hecho que hasta la fecha solo el proyecto en la cuenca del río Ica,
@@ -1128,19 +1150,6 @@
         de los distritos afectados en la zona sur de Huaytará.
       </p>
 
-      <div class="slider-container">
-        <div class="gallery-wrap">
-          <div class="item item-12"><span>La comunidad San Isidro aún practica la Minka, una actividad ancenstral de
-              ayuda mutua que proviene desde los Incas. Cosechan papa para hacer chuño. Foto: Juan Carlos
-              Cisneros</span></div>
-          <div class="item item-13"><span>La papa es la base de la economía de la comunidad San Isidro. Los comuneros la
-              cosechan para consumirla y hacer chuño. Foto: Juan Carlos Cisneros</span></div>
-          <div class="item item-14"><span>El chuño es la principal producción de los comuneros de la sierra alta de
-              Puno. Debido a la contaminación del Ramis la producción se ha reducido. Foto: Juan Carlos Cisneros</span>
-          </div>
-        </div>
-      </div>
-
       <p class="texto-lr">
         A ello agrega la falta de continuidad que pueden tener proyectos de este tipo, vinculada a los funcionarios de
         turno que ingresan al poder y no comprenden la necesidad de estas obras. Para ello, Neyra ejemplifica con un
@@ -1159,12 +1168,6 @@
         recursos.
       </p>
 
-      <div class="texto-lr" style="margin: 40px 0; margin: auto;">
-        <div class="flourish-embed flourish-chart" data-src="visualisation/10949183">
-          <script src="https://public.flourish.studio/resources/embed.js"></script>
-        </div>
-      </div>
-
       <p class="texto-lr">
         “El gobierno central manda el presupuesto con nombre propio. El gobierno regional de Ica recibe y luego nos
         deriva. Pero ese presupuesto viene en exclusividad para ese proyecto [cuenca del río Ica]”, indicó Luis Jímenez
@@ -1181,18 +1184,6 @@
         Explicó que para conseguir dinero para el proyecto de la cuenca del río Ica tuvieron que acudir a la Presidencia
         del Consejo de Ministros y con su aprobación acudir al Ministerio de Economías para presionar el desembolso.
       </p>
-
-      <div class="slider-container">
-        <div class="gallery-wrap">
-          <div class="item item-15"><span>En la comunidad campesina Recreo los comuneros muestran las aguas cristalinas
-              del río San Juan uniéndose al río Ramis. Foto: Juan Carlos Cisneros</span></div>
-          <div class="item item-16"><span>El agua que consumen los pobladores del distrito de San Antón proviene del río
-              Ramis, de un color verdoso por la contaminación. Foto: Juan Carlos Cisneros</span></div>
-          <div class="item item-17"><span>El médico del puesto de salud del distrito de San Antón, Máximo Mamani,
-              denuncia que en los últimos años se han presentado nacimientos con males congénitos. Foto: Juan Carlos
-              Cisneros</span></div>
-        </div>
-      </div>
 
       <p class="texto-lr">
         “Nosotros estamos actualizando los expedientes y se están presentando a las entidades pertinentes que nos van a
@@ -1238,10 +1229,6 @@
 
       <p>*Tabla de los 4 proyectos</p>
 
-      <div class="texto-lr flourish-embed flourish-map" data-src="visualisation/10921263">
-        <script src="https://public.flourish.studio/resources/embed.js"></script>
-      </div>
-
       <p class="texto-lr">
         Las cuatro obras mencionados anteriormente son del grupo de los que ejecutaron hasta el 40% de su presupuesto
         total. En este hay 16 proyectos de infraestructura natural entre los que aún están activos, los que ya cerraron
@@ -1255,17 +1242,6 @@
       </p>
 
       <p>Tabla de los 11 sin incluir a los 4 de arriba*</p>
-
-      <div class="slider-container">
-        <div class="gallery-wrap">
-          <div class="item item-18"><span>Paulina Luicho encabezó las protestas del 2011, cuando la contaminación en el
-              río Ramis tomó dimensiones peligrosas. Foto: Juan Carlos Cisneros</span></div>
-          <div class="item item-19"><span>El resultado de las protestas fueron seis comuneros asesinados. Desde ese
-              momento el gobierno no ha solucionado la contaminación. Foto: Juan Carlos Cisneros</span></div>
-          <div class="item item-20"><span>La comunidad Catuyo Condoriri tenía una piscigranja. Cuando la contaminación
-              aumentó los peces murieron y el emprendimiento fracasó. Foto: Juan Carlos Cisneros</span></div>
-        </div>
-      </div>
 
       <p class="texto-lr">
         Si bien en su gran mayoría los proyectos han ejecutado más del 90% —y muchos de estos cierran este 2022—, hay
@@ -1296,23 +1272,6 @@
         propósito al final”, finaliza.
       </p>
 
-      <div class="slider-container">
-        <div class="gallery-wrap">
-          <div class="item item-21"><span>La mina San Rafael, de Minsur SA, es la tercera productora de estaño a nivel
-              mundial y provocó el crecimiento del distrito de Antauta. Foto: Juan Carlos Cisneros</span></div>
-          <div class="item item-22"><span>Al ingreso de la mina se puede notar que las aguas que provienen de la
-              quebrada chogñota tienen un olor a azufre. Foto: Juan Carlos Cisneros</span></div>
-          <div class="item item-23"><span>La empresa Minsur SA instaló una granja de animales en la rivera del riachuelo
-              para demostrar que las aguas que expulsan de la poza de relaves no contamina. Foto: Juan Carlos
-              Cisneros</span></div>
-          <div class="item item-24"><span>Zenon Jacho, presidente de las rondas campesinas de San Antón, muestra una de
-              las rocas amarillentas que adornan el riachuelo de la quebrada Chogñota. Foto: Juan Carlos Cisneros</span>
-          </div>
-          <div class="item item-25"><span>Al ingreso de la mina San Rafael, la empresa instaló un cartel en el que
-              anuncian la utopía que esperan de su operación minera. Foto: Juan Carlos Cisneros</span></div>
-        </div>
-      </div>
-
       <p class="texto-lr" style="text-align: center;">
         <br>
         Para este informe nos comunicamos con el actual gobernador de Huancavelica, Maciste Díaz; sin embargo, no
@@ -1333,14 +1292,13 @@
 
     @font-face {
       font-family: Inter;
-      src: url(Inter-Regular.otf);
+      src: url(GlacialIndifference-Bold.otf);
     }
 
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      color: #212529;
       font-family: Inter, sans-serif;
     }
 
@@ -1356,11 +1314,22 @@
       -ms-text-size-adjust: 100%;
       font-size: 62.5%;
       -webkit-text-size-adjust: 100%;
-      color: #212529;
     }
 
     body {
-      background: url('fondo.png');
+      animation: fadeInAnimation ease 1s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes fadeInAnimation {
+      0% {
+        opacity: 0.5;
+      }
+
+      100% {
+        opacity: 1;
+      }
     }
 
 
@@ -1369,6 +1338,7 @@
       min-height: 100vh;
       display: flex;
       align-items: flex-end;
+      animation: fadeIn 5s;
     }
 
     .logo-desktop {
@@ -1418,14 +1388,15 @@
       object-fit: cover;
       width: 100%;
       position: relative;
-      bottom: -3rem;
+      /* bottom: -3rem; */
     }
 
     .w-text {
       position: relative;
-      padding: 42px 42px 60px;
+      padding: 42px 20vw 60px;
       width: 100%;
-      max-width: 50%;
+      /* max-width: 80%; */
+      text-align: center;
     }
 
     .w-1000 {
@@ -1456,11 +1427,12 @@
       z-index: 1;
       transition: all 0.5s ease;
       padding: 10px 32px;
+
     }
 
     header.sticky-gray {
       background: #000;
-      border-bottom: 5px solid #F2B50C;
+      /* border-bottom: 5px solid #FFF; */
     }
 
     header span {
@@ -1479,7 +1451,7 @@
       line-height: 1.5;
     }
 
-    span [class*="btn-"] {
+    /* span [class*="btn-"] {
       display: inline-block;
       width: 43px;
       height: 43px;
@@ -1488,9 +1460,9 @@
 
     span a.btn-fb {
       margin-left: 0;
-    }
+    } */
 
-    span a.btn-fb,
+    /* span a.btn-fb,
     span a.btn-twt,
     span a.btn-wsp {
       background-image: url(https://s3.amazonaws.com/glr-demo/2020/04/13/icons-white-1586816732.svg);
@@ -1502,9 +1474,9 @@
     header.sticky-gray span a.btn-twt,
     header.sticky-gray span a.btn-wsp {
       background-image: url(https://s3.amazonaws.com/glr-demo/2020/04/13/icons-color-1586815843.svg);
-    }
+    } */
 
-    span a.btn-twt {
+    /* span a.btn-twt {
       background-position: 0 -43px;
       background-repeat: no-repeat;
     }
@@ -1512,7 +1484,7 @@
     span a.btn-wsp {
       background-position: 0 -86px;
       background-repeat: no-repeat;
-    }
+    } */
 
     h1 {
       font-size: 5.5rem;
@@ -1867,7 +1839,7 @@
       padding-bottom: 2px;
       min-width: 209px;
       max-width: 35%;
-      border-bottom: 2px solid #000;
+      border-bottom: 2px solid #fff;
     }
 
     .content-img-fixed .flourish-embed {
@@ -1908,17 +1880,9 @@
       display: block;
     }
   </style>
-  <footer style="background-color:#000">
+  <!-- <footer style="background-color:#000">
     <div class="w-1000">
       <span><i>"Pasivos ambientales: residuos de la minería que nadie quiere asumir"</i> es una investigación de:</span>
-      <div style="margin-top: 20px;">
-        <img src="logo.png" alt="LR Data" style="max-width: 140px; margin: 10px 5px 0;" />
-        <img src="connectas-logo-white-300x117.png" alt="CONNECTAS" style="max-width: 180px; margin: 0 5px;" />
-      </div>
-      <p>Con el apoyo de</p>
-      <img src="ICFJ-LOGO.png" alt="ICFJ"
-        style="max-width: 160px; margin-bottom: 30px; filter: brightness(0) invert(1);" />
-
       <span><strong>Redacción:</strong> Roberth Orihuela Quequezana</span>
       <span><strong>Fotografía:</strong> Juan Carlos Cisneros Mamani</span>
       <span><strong>Diseño:</strong> Jazmín Ceras Aguado</span>
@@ -1936,7 +1900,7 @@
         Roberth Orihuela para La República y CONNECTAS, con el apoyo del International Center for Journalists (ICFJ) en
         el marco de la Iniciativa para el Periodismo de Investigación de las Américas.</span>
     </div>
-  </footer>
+  </footer> -->
   <script>
     var h = document.getElementById("w-header"),
       s = document.getElementById("w-section"),
@@ -1991,7 +1955,7 @@
       console.log(top);
     }
     (document.onscroll = function () {
-      window.scrollY >= $('#portada-cover').offset().top
+      window.scrollY >= $('#titular').offset().top
         ? (h.classList.add("sticky-gray"),
           sourceLogoDesktop.setAttribute("style", "display:none"),
           sourceLogoMobile.setAttribute("style", "display:block"),
@@ -2084,45 +2048,11 @@
   </script>
 
 
-
-  <script>mendeleyWebImporter = {
-      downloadPdfs(t) { return this._call('downloadPdfs', [t]); },
-      open() { return this._call('open', []); },
-      _call(methodName, methodArgs) {
-        const id = Math.random();
-        window.postMessage({ id, token: '0.29864274865028917', methodName, methodArgs }, 'https://data.larepublica.pe');
-        return new Promise(resolve => {
-          const listener = window.addEventListener('message', event => {
-            const data = event.data;
-            if (typeof data !== 'object' || !('result' in data) || data.id !== id) return;
-            window.removeEventListener('message', listener);
-            resolve(data.result);
-          });
-        });
-      }
-    };</script>
-  <div id="naptha_container0932014_0707"></div>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-  <script src="js/scrollmagic/ScrollMagic.min.js"></script>
-  <script src="js/scrollmagic/plugins/animation.gsap.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
+
 </body>
-<div id="035ace9e-3363-4255-bef8-455c5f8ee47f" style="all: initial;"></div>
-<div id="3b76fe0d-069f-400d-8ef1-0e0767b508a8" style="all: initial;"></div>
-<div id="d36176ff-c1cc-4605-8daf-de5f35119b9c" style="all: initial;"></div>
-<div id="afaab622-cb4f-44e4-8090-d8e986f05a30" style="all: initial;"></div>
-<div id="08a3b552-7b51-4bb2-b804-20760f93f92a" style="all: initial;"></div>
-<div id="08c93973-f906-4551-9af5-01a829e70399" style="all: initial;"></div>
-<div id="b06c94c0-7ad9-41e9-bfd2-7a7ddffba682" style="all: initial;"></div>
-<div id="71fbfd6b-b98c-40c6-92d6-b4484a9130ba" style="all: initial;"></div>
-<div id="324951d8-70df-410a-a73e-5b38ad66400e" style="all: initial;"></div>
-<div id="c10893e6-dda7-4ead-b90e-1e5faebf954d" style="all: initial;"></div>
-<div id="ba4257ff-a9e3-4f52-a377-66c30a973e7e" style="all: initial;"></div>
-<div id="edb5633d-9e05-467a-bdd3-f404f988eec2" style="all: initial;"></div>
-<div id="5526e868-7fae-4126-8765-cab70edd8144" style="all: initial;"></div>
 
 </html>
