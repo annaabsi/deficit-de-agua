@@ -8,18 +8,15 @@
   <script src="https://connect.facebook.net/es_LA/sdk.js?hash=6d8f9720f47d5152c43742a0c2e75958&amp;amp;ua=modern_es6"
     async crossorigin="anonymous"></script>
   <script id="facebook-jssdk" src="//connect.facebook.net/es_LA/sdk.js"></script>
-  <link rel="canonical"
-    href="https://data.larepublica.pe/titular">
+  <link rel="canonical" href="https://data.larepublica.pe/titular">
   <meta name="robots" content="index,follow">
   <meta name="googlebot" content="index,follow">
   <meta name="description"
     content="Un seguimiento al financiamiento público de los proyectos de infraestructura natural para la seguridad hídrica evidencia que aún hay grandes obras que no avanzan y otras que concluyeron sin ejecutar su presupuesto total. En Huancavelica, 4 millones de personas están a la espera de proyectos de siembra y cosecha de agua.">
-  <meta property="og:url"
-    content="https://data.larepublica.pe/titular">
+  <meta property="og:url" content="https://data.larepublica.pe/titular">
   <meta property="og:title"
     content="Inversiones de infraestructura natural paralizadas en comunidades con déficit del agua">
-  <meta property="og:image"
-    content="portada.png">
+  <meta property="og:image" content="portada.png">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta property="fb:pages" content="94604237016">
   <meta property="fb:app_id" content="489210501129201">
@@ -29,8 +26,7 @@
     content="Inversiones de infraestructura natural paralizadas en comunidades con déficit del agua">
   <meta name="twitter:description"
     content="Un seguimiento al financiamiento público de los proyectos de infraestructura natural para la seguridad hídrica evidencia que aún hay grandes obras que no avanzan y otras que concluyeron sin ejecutar su presupuesto total. En Huancavelica, 4 millones de personas están a la espera de proyectos de siembra y cosecha de agua.">
-  <meta name="twitter:image"
-    content="portada.png">
+  <meta name="twitter:image" content="portada.png">
   <meta name="distribution" content="global">
   <meta name="rating" content="general">
   <meta name="lang" content="es_PE">
@@ -528,11 +524,28 @@
     .background {
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: center top;
+      background-position: bottom;
+      position: relative;
+      padding-bottom: 15vh;
     }
 
     .background-1 {
-      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)30%), url('parte 1.png');
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)30%), url('parte 1.png');
+      z-index: 2;
+    }
+
+    .background-2 {
+      background-image: linear-gradient(to bottom, transparent, transparent), url('parte 2.png');
+      margin-top: -35vh;
+      padding-top: 20vh;
+      z-index: 1;
+    }
+
+    .background-3 {
+      background-image: linear-gradient(to bottom, transparent, transparent), url('parte 3.png');
+      margin-top: -25vh;
+      padding-top: 30vh;
+      z-index: 0;
     }
 
     span [class*="btn-"] {
@@ -612,10 +625,11 @@
         </a>
       </span> -->
       <div class="menu__rigth"><span class="items_shared"> <a class="btn-fb btn-Social" data-social="facebook"
-            href="https://www.facebook.com/sharer/sharer.php?u=https://data.larepublica.pe/" id="id-btn-fb" rel="noopener"> </a> <a
-            class="btn-twt btn-Social" data-social="twitter" href="https://twitter.com/share?url=https://data.larepublica.pe/&via=LRData"
-            id="id-btn-twt" rel="noopener"> </a> <a class="btn-wsp" href="https://api.whatsapp.com/send?text=https://data.larepublica.pe/"
-            id="id-btn-wsp" rel="noopener" target="_blank"> </a> </span></div>
+            href="https://www.facebook.com/sharer/sharer.php?u=https://data.larepublica.pe/" id="id-btn-fb"
+            rel="noopener"> </a> <a class="btn-twt btn-Social" data-social="twitter"
+            href="https://twitter.com/share?url=https://data.larepublica.pe/&via=LRData" id="id-btn-twt" rel="noopener">
+          </a> <a class="btn-wsp" href="https://api.whatsapp.com/send?text=https://data.larepublica.pe/" id="id-btn-wsp"
+            rel="noopener" target="_blank"> </a> </span></div>
     </div>
     </div>
   </header>
@@ -748,7 +762,9 @@
             <h5 style="display: inline;">Por: Abel Cárdenas, Milagros Requena y Xenia Martínez.</h5>
           </div>
 
-          <div class="texto-lr"><hr style="border-top:1px solid #fff; opacity: 1; margin: 30px 0 90px 0;"></div>
+          <div class="texto-lr">
+            <hr style="border-top:1px solid #fff; opacity: 1; margin: 30px 0 90px 0;">
+          </div>
           <!-- <p class="texto-lr">
             La población andina trata con cariño el agua, la cuidan como se protege al ser querido. Y cuando no está o
             no la tienen, sufren, les duele, se les hace difícil la vida.
@@ -1028,104 +1044,118 @@
             fin de contrarrestar problemas de acceso al agua tanto para las actividades económicas como para el consumo
             diario de la población.
           </p>
-          <br>
+
+          <p class="texto-lr" style="margin:200px auto;">imagen del rio</p>
 
         </div>
       </div>
 
-      <div class="background background-2 text-white">
+      <div class="background background-2">
 
-      </div>
-
-      <p class="texto-lr">
-        <h3>
+        <h3 class="black">
           <span>
             Infraestructura natural
           </span>
         </h3>
+
+        <p class="texto-lr">
+          En muchas partes del país, las inundaciones, sequías, contaminación de los ríos u otro factor como lo que
+          ocurre
+          en la comunidad de Tomasa Huarcaya, han originado graves problemas a las comunidades que viven cerca, quienes
+          se
+          quedan sin agua para su subsistencia, esto originó que las entidades públicas y privadas comiencen a invertir
+          en
+          proyectos de infraestructura natural.
         </p>
 
-      <p class="texto-lr">
-        En muchas partes del país, las inundaciones, sequías, contaminación de los ríos u otro factor como lo que ocurre
-        en la comunidad de Tomasa Huarcaya, han originado graves problemas a las comunidades que viven cerca, quienes se
-        quedan sin agua para su subsistencia, esto originó que las entidades públicas y privadas comiencen a invertir en
-        proyectos de infraestructura natural.
-      </p>
+        <p class="texto-lr">
+          Gena Gammie, representante de Forest Trends, organización internacional encargada promover proyectos de
+          infraestructura natural en diversos países, entre ellos el Perú, explica la importancia de que las entidades
+          públicas y privadas promuevan más inversiones sobre este tema y los beneficios para la población.
+        </p>
 
-      <p class="texto-lr">
-        Gena Gammie, representante de Forest Trends, organización internacional encargada promover proyectos de
-        infraestructura natural en diversos países, entre ellos el Perú, explica la importancia de que las entidades
-        públicas y privadas promuevan más inversiones sobre este tema y los beneficios para la población.
-      </p>
+        <p class="texto-lr">
+          “Lo que queremos es ayudar a hacer más lento todo este flujo de agua cuando llueve, ayudar a que el agua quede
+          en el territorio, que filtre en el suelo, que este bien protegidos, que ayude a recargar un acuífero. En
+          general, que tome más tiempo para que esta agua de lluvia llegue a las quebradas y ríos y nos ayude a tener
+          más
+          cuando lo necesitamos”, explica.
+        </p>
 
-      <p class="texto-lr">
-        “Lo que queremos es ayudar a hacer más lento todo este flujo de agua cuando llueve, ayudar a que el agua quede
-        en el territorio, que filtre en el suelo, que este bien protegidos, que ayude a recargar un acuífero. En
-        general, que tome más tiempo para que esta agua de lluvia llegue a las quebradas y ríos y nos ayude a tener más
-        cuando lo necesitamos”, explica.
-      </p>
+        <p class="texto-lr">
+          Si bien Perú lidera en la región con la cantidad de proyecto de este tipo —como comenta Gammie—, el sistema de
+          inversión pública retrasa los avances.
+        </p>
 
-      <p class="texto-lr">
-        Si bien Perú lidera en la región con la cantidad de proyecto de este tipo —como comenta Gammie—, el sistema de
-        inversión pública retrasa los avances.
-      </p>
+        <p class="texto-lr">
+          De acuerdo al informe Abriendo el caño: estado del financiamiento en la infraestructura natural para la
+          seguridad hídrica en el Perú (2021), en promedio una ejecución de este tipo demora siete años para su
+          desarrollo
+          y finalización.
+        </p>
 
-      <p class="texto-lr">
-        De acuerdo al informe Abriendo el caño: estado del financiamiento en la infraestructura natural para la
-        seguridad hídrica en el Perú (2021), en promedio una ejecución de este tipo demora siete años para su desarrollo
-        y finalización.
-      </p>
+      </div>
 
-      <p class="texto-lr">
-      <h3>
-        <span>
-          Huancavelica, una región olvidada
-        </span>
-      </h3>
-      </p>
+      <div class="background background-3 text-white">
 
-      <p class="texto-lr">
-        El proyecto del cual hace mención Tomasa y Victor lleva por nombre “Recuperación de los Servicios Ecosistémicos
-        de Regulación Hídrica en la cabecera de la cuenca del río Pisco” y comprende a cuatro distritos de la zona norte
-        de Huaytará: Huayacundo, San Antonio de Cusicancha, Quito Arma y Huaytará.
-      </p>
+        <h3>
+          <span>
+            Huancavelica, una región olvidada
+          </span>
+        </h3>
 
-      <p class="texto-lr">
-        La idea del proyecto es construir cochas (reservorios) para almacenar el agua de la lluvia en la zonas más
-        altas, para luego filtrar equilibradamente el agua y mantener abastecida a las comunidades.
-      </p>
+        <p class="texto-lr">
+          El proyecto del cual hace mención Tomasa y Victor lleva por nombre “Recuperación de los Servicios
+          Ecosistémicos
+          de Regulación Hídrica en la cabecera de la cuenca del río Pisco” y comprende a cuatro distritos de la zona
+          norte
+          de Huaytará: Huayacundo, San Antonio de Cusicancha, Quito Arma y Huaytará.
+        </p>
 
-      <p class="texto-lr">
-        También contempla la plantación de pinos en los alrededores de las cochas con el fin de reforestar los lugares
-        devastados porque estas plantas servirían para absorber el agua y evitar erosiones de suelo.
-      </p>
+        <p class="texto-lr">
+          La idea del proyecto es construir cochas (reservorios) para almacenar el agua de la lluvia en la zonas más
+          altas, para luego filtrar equilibradamente el agua y mantener abastecida a las comunidades.
+        </p>
 
-      <p class="texto-lr">
-        Además, les habían prometido a la población que ellos iban a participar directamente en el proyecto, por lo que
-        generaría ingresos para las familias.
-      </p>
+        <p class="texto-lr">
+          También contempla la plantación de pinos en los alrededores de las cochas con el fin de reforestar los lugares
+          devastados porque estas plantas servirían para absorber el agua y evitar erosiones de suelo.
+        </p>
+
+        <p class="texto-lr">
+          Además, les habían prometido a la población que ellos iban a participar directamente en el proyecto, por lo
+          que
+          generaría ingresos para las familias.
+        </p>
 
 
-      <p class="texto-lr">
-        “(¿Les ofrecieron trabajo?) Sí, nos dijeron que nos iban a dar trabajo, qué íbamos a trabajar en la obra cuando
-        iniciara, pero nada… hasta ahorita”, dijo Tomasa.
-      </p>
+        <p class="texto-lr">
+          “(¿Les ofrecieron trabajo?) Sí, nos dijeron que nos iban a dar trabajo, qué íbamos a trabajar en la obra
+          cuando
+          iniciara, pero nada… hasta ahorita”, dijo Tomasa.
+        </p>
 
-      <p class="texto-lr">
-        La aprobación del proyecto en la zona norte de Huaytará también implicó la creación de otros dos: uno en el sur
-        del distrito (cuenca del río Pisco) y el segundo en el centro (cuenca del río Ica). Juntos representan la
-        inversión más grande en proyectos de infraestructura natural de la región con financiamiento público.
-      </p>
+        <p class="texto-lr">
+          La aprobación del proyecto en la zona norte de Huaytará también implicó la creación de otros dos: uno en el
+          sur
+          del distrito (cuenca del río Pisco) y el segundo en el centro (cuenca del río Ica). Juntos representan la
+          inversión más grande en proyectos de infraestructura natural de la región con financiamiento público.
+        </p>
 
-      <p class="texto-lr">
-        Cada uno de ellos cuenta con expediente aprobado y con una inversión total de más de 80 millones de soles.
-      </p>
+        <div class="texto-lr flourish-embed flourish-map" data-src="visualisation/11492801"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
-      <p class="texto-lr">
-        Para José Antonio Escobar, alcalde encargado de Huaytará, el proyecto fue iniciado por las gestiones anteriores
-        con la voluntad de trabajar en equipo, pero tras el cambio de autoridades, los proyectos se estancaron por falta
-        de acuerdos entre los actuales gobernadores regionales.
-      </p>
+        <p class="texto-lr">
+          Cada uno de ellos cuenta con expediente aprobado y con una inversión total de más de 80 millones de soles.
+        </p>
+
+        <p class="texto-lr">
+          Para José Antonio Escobar, alcalde encargado de Huaytará, el proyecto fue iniciado por las gestiones
+          anteriores
+          con la voluntad de trabajar en equipo, pero tras el cambio de autoridades, los proyectos se estancaron por
+          falta
+          de acuerdos entre los actuales gobernadores regionales.
+        </p>
+      </div>
 
       <p class="texto-lr">
         Lamentablemente, las posturas políticas han hecho que hasta la fecha solo el proyecto en la cuenca del río Ica,
@@ -1516,16 +1546,30 @@
       font-size: 1.8rem;
       font-family: Inter, sans-serif;
       width: 100%;
-      margin: 50px auto 25px;
       max-width: 750px;
       font-weight: bold;
-      line-height: 1.25;
+      text-align: center;
+      border-bottom: 2px solid #FFF;
+      line-height: 0;
+      margin: 80px auto;
     }
 
     h3 span {
-      background-color: #000;
       color: #fff;
       letter-spacing: 1px;
+      padding: 0 10px;
+      background: #000;
+    }
+
+    h3.black {
+      border-bottom: 2px solid #000;
+    }
+
+    h3.black span {
+      color: #000;
+      letter-spacing: 1px;
+      padding: 0 10px;
+      background: #fff;
     }
 
     .contentFixedElement {
@@ -1751,8 +1795,14 @@
       }
 
       h3 {
-        margin: 40px auto 15px;
+        margin: 40px auto;
         padding: 0 15px;
+        line-height: 1;
+        border: none;
+      }
+
+      h3.black {
+        border: none;
       }
 
       .item span {
