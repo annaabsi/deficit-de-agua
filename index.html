@@ -434,7 +434,7 @@
     }
 
     .background-1 {
-      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)30%), url('parte 1 con rio.png');
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)30%), url('parte 1.png');
       z-index: 5;
     }
 
@@ -754,13 +754,13 @@
             </div>
           </div>
 
-          <p class="texto-lr">
+          <p class="texto-lr" id="rio-text">
             “Hasta ahorita quedó en nada, lo que es nada. Solamente quedó en palabra, dijeron que se iba a hacer,
             incluso fijaron una zona para la plantación de pino, dijeron que serían 30 mil pinos. En nuestra comunidad
             iban a ser 12 cochas para almacenar agua”, declaró.
           </p>
 
-          <p class="texto-lr" style="margin-bottom: 500px;">
+          <p class="texto-lr">
             La inversión que escucharon Tomasa y Víctor fue sobre uno de los proyectos de infraestructura natural para
             la seguridad hídrica que promueven la conservación, restauración y recuperación de los ecosistemas con el
             fin de contrarrestar problemas de acceso al agua tanto para las actividades económicas como para el consumo
@@ -782,8 +782,10 @@
                 <div class="transition"></div>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- Ends Scrollytelling -->
+
+          <img class="rio" src="rio.png" id="rio" alt="" style="width: 100%;">
 
         </div>
       </div>
@@ -871,7 +873,7 @@
           inversión más grande en proyectos de infraestructura natural de la región con financiamiento público.
         </p>
 
-        <div class="texto-lr flourish-embed flourish-map" data-src="visualisation/11492801">
+        <div class="flourish-embed flourish-map texto-lr" data-src="visualisation/11574251">
           <script src="https://public.flourish.studio/resources/embed.js"></script>
         </div>
 
@@ -1221,7 +1223,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      z-index: 1;
+      z-index: 10;
       transition: all 0.5s ease;
       padding: 10px 32px;
 
@@ -1230,6 +1232,7 @@
     header.sticky-gray {
       background: #000;
       /* border-bottom: 5px solid #FFF; */
+      z-index: 10;
     }
 
     header span {
@@ -1723,20 +1726,20 @@
   <script>
     var h = document.getElementById("w-header"),
       s = document.getElementById("w-section"),
-      sourceLogoMobile = document.getElementById("w-sourceLogoMobile"),
+    sourceLogoMobile = document.getElementById("w-sourceLogoMobile"),
       sourceLogoDesktop = document.getElementById("w-sourceLogoDesktop"),
       socialMediaWhite =
-        "https://s3.amazonaws.com/glr-demo/2020/04/13/icons-white-1586816732.svg",
+      "https://s3.amazonaws.com/glr-demo/2020/04/13/icons-white-1586816732.svg",
       socialMediaColor =
-        "https://s3.amazonaws.com/glr-demo/2020/04/13/icons-color-1586815843.svg",
+      "https://s3.amazonaws.com/glr-demo/2020/04/13/icons-color-1586815843.svg",
       srcsetImgWhite =
-        "https://s3.amazonaws.com/glr-demo/2020/04/14/logo-lrdata-desktop-1586903791.svg",
+      "https://s3.amazonaws.com/glr-demo/2020/04/14/logo-lrdata-desktop-1586903791.svg",
       srcImgWhite =
-        "https://s3.amazonaws.com/glr-demo/2020/04/14/logo-lrdata-mobile-1586898504.svg",
+      "https://s3.amazonaws.com/glr-demo/2020/04/14/logo-lrdata-mobile-1586898504.svg",
       srcsetImgRed =
-        "https://s3.amazonaws.com/glr-demo/2020/04/14/logo-lrdata-red-desktop-1586904422.svg",
+      "https://s3.amazonaws.com/glr-demo/2020/04/14/logo-lrdata-red-desktop-1586904422.svg",
       srcImgRed =
-        "https://s3.amazonaws.com/glr-demo/2020/04/14/logo-lrdata-red-mobile-1586898360.svg",
+      "https://s3.amazonaws.com/glr-demo/2020/04/14/logo-lrdata-red-mobile-1586898360.svg",
       sum = s.getBoundingClientRect().top,
       elementsFixed = document.querySelectorAll(".contentFixedElement"),
       blockFixed = document.querySelectorAll(".block-fixed"),
@@ -1864,6 +1867,23 @@
           };
         });
       });
+  </script>
+  <script>
+    let rio = document.getElementById('rio');
+    document.addEventListener('scroll', function() {
+        // Get scroll position
+        
+        let scrollPosition = window.pageYOffset;
+
+        // Calculate whether the scroll it 350px or not then set the opacity to face the header out
+        if (scrollPosition >= $('#rio-text').offset().top) {
+            rio.style.opacity = (scrollPosition / $('#rio-text').offset().top - 0.9)*3;
+            console.log(rio.style.opacity)
+        } else {
+            rio.style.opacity = 0;
+            console.log('nada')
+        }
+    });
   </script>
 
 
