@@ -748,9 +748,12 @@
 
           <div class="slider-container">
             <div class="gallery-wrap">
-              <div class="item item-1"></div>
-              <div class="item item-2"></div>
-              <div class="item item-3"></div>
+              <div class="item item-1"><span>Tomasa Huarcaya vive en el centro poblado de Huayacundo Arma. En esa zona
+                  están destinados 12 reservorios y un vivero como parte del proyecto.</span></div>
+              <div class="item item-2"><span>Punto de agua que una familia que vive en las zonas rurales del distrito de
+                  Huaytará.</span></div>
+              <div class="item item-3"><span>Víctor, comunero que vive cerca a la zona de intervención en el cerro
+                  Carmen Alto, Huayacundo Arma.</span></div>
             </div>
           </div>
 
@@ -823,7 +826,10 @@
           inversión pública retrasa los avances en la ejecución.
         </p>
 
-        <img class="texto-lr" src="foto muro.png" alt="">
+        <img class="texto-lr" style="margin-bottom: 0;" src="foto muro.png" alt="">
+        <p class="texto-lr" style="font-size: 12px; text-align: center;">En el distrito de Huaytará hay diversos proyectos públicos para mejorar la calidad de vida de la
+          ciudadanía.</p>
+
 
         <p class="texto-lr">
           De acuerdo al informe Abriendo el caño: estado del financiamiento en la infraestructura natural para la
@@ -905,8 +911,9 @@
 
         <div class="slider-container">
           <div class="gallery-wrap">
-            <div class="item item-4"></div>
-            <div class="item item-5"></div>
+            <div class="item item-4"><span>Lorem ipsum dolor sit amet.</span></div>
+            <div class="item item-5"><span>Agujero en el suelo ubicado cerca al centro poblado de Huayacundo Arma. No
+                hay otra evidencia de alguna intervención del proyecto.</span></div>
           </div>
         </div>
 
@@ -1719,6 +1726,7 @@
       <span><strong>Texto:</strong> Abel Cárdenas (La República) y Milagros Requena (La República)</span>
       <span><strong>Podcast:</strong> Xenia Martínez (RPP)</span>
       <span><strong>Diseño:</strong> Jazmín Ceras</span>
+      <span><strong>Visualizaciones:</strong> Milagros Requena</span>
       <span><strong>Programación:</strong> Anna Absi</span>
       <span><strong>Acompañamiento editorial:</strong> Fundación Mohme y SPDA</span>
     </div>
@@ -1726,20 +1734,20 @@
   <script>
     var h = document.getElementById("w-header"),
       s = document.getElementById("w-section"),
-    sourceLogoMobile = document.getElementById("w-sourceLogoMobile"),
+      sourceLogoMobile = document.getElementById("w-sourceLogoMobile"),
       sourceLogoDesktop = document.getElementById("w-sourceLogoDesktop"),
       socialMediaWhite =
-      "https://s3.amazonaws.com/glr-demo/2020/04/13/icons-white-1586816732.svg",
+        "https://s3.amazonaws.com/glr-demo/2020/04/13/icons-white-1586816732.svg",
       socialMediaColor =
-      "https://s3.amazonaws.com/glr-demo/2020/04/13/icons-color-1586815843.svg",
+        "https://s3.amazonaws.com/glr-demo/2020/04/13/icons-color-1586815843.svg",
       srcsetImgWhite =
-      "https://s3.amazonaws.com/glr-demo/2020/04/14/logo-lrdata-desktop-1586903791.svg",
+        "https://s3.amazonaws.com/glr-demo/2020/04/14/logo-lrdata-desktop-1586903791.svg",
       srcImgWhite =
-      "https://s3.amazonaws.com/glr-demo/2020/04/14/logo-lrdata-mobile-1586898504.svg",
+        "https://s3.amazonaws.com/glr-demo/2020/04/14/logo-lrdata-mobile-1586898504.svg",
       srcsetImgRed =
-      "https://s3.amazonaws.com/glr-demo/2020/04/14/logo-lrdata-red-desktop-1586904422.svg",
+        "https://s3.amazonaws.com/glr-demo/2020/04/14/logo-lrdata-red-desktop-1586904422.svg",
       srcImgRed =
-      "https://s3.amazonaws.com/glr-demo/2020/04/14/logo-lrdata-red-mobile-1586898360.svg",
+        "https://s3.amazonaws.com/glr-demo/2020/04/14/logo-lrdata-red-mobile-1586898360.svg",
       sum = s.getBoundingClientRect().top,
       elementsFixed = document.querySelectorAll(".contentFixedElement"),
       blockFixed = document.querySelectorAll(".block-fixed"),
@@ -1870,19 +1878,19 @@
   </script>
   <script>
     let rio = document.getElementById('rio');
-    document.addEventListener('scroll', function() {
-        // Get scroll position
-        
-        let scrollPosition = window.pageYOffset;
+    document.addEventListener('scroll', function () {
+      // Get scroll position
 
-        // Calculate whether the scroll it 350px or not then set the opacity to face the header out
-        if (scrollPosition >= $('#rio-text').offset().top) {
-            rio.style.opacity = (scrollPosition / $('#rio-text').offset().top - 0.9)*3;
-            console.log(rio.style.opacity)
-        } else {
-            rio.style.opacity = 0;
-            console.log('nada')
-        }
+      let scrollPosition = window.pageYOffset;
+
+      // Calculate whether the scroll it 350px or not then set the opacity to face the header out
+      if (scrollPosition >= $('#rio-text').offset().top) {
+        rio.style.opacity = (scrollPosition / $('#rio-text').offset().top - 0.9) * 3;
+        console.log(rio.style.opacity)
+      } else {
+        rio.style.opacity = 0;
+        console.log('nada')
+      }
     });
   </script>
 
