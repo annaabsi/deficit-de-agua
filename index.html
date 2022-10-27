@@ -425,6 +425,15 @@
       background-image: url('foto nueva.png');
     }
 
+    .background-rio {
+      background-image: url("rio_.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 80vh;
+      width: 0;
+      max-width: 100%;
+    }
+
     .background {
       background-repeat: no-repeat;
       background-size: cover;
@@ -788,7 +797,11 @@
           </div> -->
           <!-- Ends Scrollytelling -->
 
-          <img class="rio" src="rio.png" id="rio" alt="" style="width: 100%;">
+          <div class="rio">
+            <div class="background-rio" id="rio"></div>
+          </div>
+
+          <!-- <img class="rio" src="rio_.png" id="rio" alt="" style="width: 100%;"> -->
 
         </div>
       </div>
@@ -1885,10 +1898,10 @@
 
       // Calculate whether the scroll it 350px or not then set the opacity to face the header out
       if (scrollPosition >= $('#rio-text').offset().top) {
-        rio.style.opacity = (scrollPosition / $('#rio-text').offset().top - 0.9) * 3;
-        console.log(rio.style.opacity)
+        rio.style.width = (scrollPosition / $('#rio-text').offset().top ) * 800 - 800 +"%";
+        console.log(rio.style.width)
       } else {
-        rio.style.opacity = 0;
+        rio.style.width = 0;
         console.log('nada')
       }
     });
